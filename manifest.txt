@@ -1,0 +1,1 @@
+configure  requirements.txt  run.sh  serfbot_commands.py  serfbot.py  serfbot_roller.py readme.txt start.sh stop.sh export.sh manifest.txt

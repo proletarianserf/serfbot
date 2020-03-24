@@ -1,0 +1,14 @@
+#!/bin/bash
+#This is a tool to configure serfbot.
+
+echo -e "Creating venv"
+virtualenv .
+echo -e "Installing required libraries to venv" 
+source ./bin/activate
+pip install -r requirements.txt
+
+
+echo -e "Please input your bot's Discord token"
+read token
+echo $token > ./token.dat
+
