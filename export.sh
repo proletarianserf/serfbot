@@ -2,4 +2,4 @@
 echo -e "Please input the target folder"
 read target
 mkdir $target
-xargs -a manifest.txt cp -t $target
+xargs -a manifest.txt cp -Rt $target

@@ -23,7 +23,7 @@ async def on_message(message):
     #For now we will leave the rolling function as is, but we will add another check to look for other bot commands
     if message.content.startswith(botkey):
         #await message.channel.send(f"bot command detected")
-        await on_command(message)
+        await on_command(message, botkey)
         return
     if message.content.startswith('/roll'):
         await rolldice(message)
